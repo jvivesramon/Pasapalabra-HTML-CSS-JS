@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>El Juego del Pasapalabra</title>
+	<link rel="icon" type="image/png" href="Favicon-Pasapalabra.png" sizes="32x32">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="main-container">
+	<section class="visibility section-1">
+		<div class="circle">
+			<div class="title-container">
+				<h1 class="title">El Juego del</h1>
+				<h2 class="main-title-word">Pasapalabra</h2>
+			</div>
+		</div>
+		<div class="main-information">
+			<span>
+				<label for="username" class="user-input">Por favor, introduce aquí tu nombre de usuario:<input class="input-name" id="username" type="text"
+					required placeholder="Escribe aquí tu nombre" minlength="1" maxlength="28"></label>
+				<button class="button-user-input" type="submit">Comenzar</button>
+			</span>
+			<span class="instructions-container">
+				<p class="instructions">
+					¡Bienvenidos al juego del Pasapalabra! Este es el clásico juego que consiste en acertar las veintisiete palabras, 
+					cada una de las cuales se corresponde con una letra del rosco para la que se ofrece una definición relativa a un concepto.<br><br>
+					Los aciertos se reflejarán en las letras del rosco marcándose en color verde, mientras que los fallos se mostrarán en color rojo. Si decides 
+					utilizar el "pasapalabra" tendrás oportunidad de volver a enfrentarte a la pregunta una vez finalizada la vuelta completa del rosco.<br><br>
+					Se dispone de un contador de 3 minutos para completar el rosco. Pasado ese tiempo, todas las letras sin resolver, 
+					contarán como fallos. Al final del juego se hará un recuento junto con las soluciones a las preguntas. ¡Mucha suerte!
+				</p>
+			</span>
+		</div>
+	</section>
+	<section class="visibility-disabilited section-2">
+		<div class="icon-container">
+			<span><img src="Pasapalabra.png"></span>
+			<span>
+				<p class="icon-title">El Juego del</p>
+				<p class="icon-main-title">Pasapalabra</p>
+			</span>
+		</div>
+		<section class="visibility-disabilited section-3">
+			<div class="container-left-circle">
+				<div class="circle-button">A</div>
+				<div class="circle-button">B</div>
+				<div class="circle-button">C</div>
+				<div class="circle-button">D</div>
+				<div class="circle-button">E</div>
+				<div class="circle-button">F</div>
+				<div class="circle-button">G</div>
+				<div class="circle-button">H</div>
+				<div class="circle-button">I</div>
+				<div class="circle-button">J</div>
+				<div class="circle-button">K</div>
+				<div class="circle-button">L</div>
+				<div class="circle-button">M</div>
+				<div class="circle-button">N</div>
+				<div class="circle-button">O</div>
+				<div class="circle-button">P</div>
+				<div class="circle-button">Q</div>
+				<div class="circle-button">R</div>
+				<div class="circle-button">S</div>
+				<div class="circle-button">T</div>
+				<div class="circle-button">U</div>
+				<div class="circle-button">V</div>
+				<div class="circle-button">W</div>
+				<div class="circle-button">X</div>
+				<div class="circle-button">Y</div>
+				<div class="circle-button">Z</div>
+			</div>
+			<p class="descriptions">Descripciones</p>
+			<div class="questions-set">26</div>
+			<div class="time-set"></div>
+			<span class="user-welcome"></span>
+			<section class="right-side">
+				<label for="answer" class="user-answer">Por favor, escribe aquí tu respuesta:<input class="input-answer" id="answer" type="text"
+					placeholder="Escribe aquí tu respuesta" required></label>
+				<button class="button-for-answer" type="button">Comprobar</button>
+				<button class="pasapalabra-button">Pasapalabra</button>
+			</section>
+			<div class="fail-button">0</div>
+			<div class="correct-button">0</div>
+		</section>
+		<section class="visibility-disabilited section-4">
+			<span class="message-score">¡Felicidades! Has completado el rosco con&nbsp;<span class="final-points">0</span>&nbsp;puntos</span>
+			<span class="ranking">
+				<p class="title-ranking">Ranking</p>
+				<ol class="users-ranking">
+				</ol>
+			</span>
+			<button class="play-again">Pulsa para volver a jugar</button>
+		</section>
+	</section>
+	<script src="pasapalabra.js"></script>
+</body>
+</html>
